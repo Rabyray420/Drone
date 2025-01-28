@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "TTHovesRegular";
+  src: url("fonts/TTHovesRegular/TTHovesRegular.woff");
+  src: url("fonts/TTHovesRegular/TTHovesRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/TTHovesRegular/TTHovesRegular.woff") format("woff"),
+    url("fonts/TTHovesRegular/TTHovesRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+.page {
+  margin: 0;
+  font-family: "TTHovesRegular";
+}
+
+.page__header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-content: center;
+  height: 100px;
+}
+
+.header__logo {
+  grid-column: 1 / 2;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_logo {
+  width: 70px;
+  height: 43.71px;
+  top: 29.14px;
+  left: 135px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.header__nav-links {
+  grid-column: 2 / 3;
+}
+
+.nav-links_button {
+  margin-right: 100px;
+  /* font-family: "TTHovesRegular"; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+  color: #333333;
+}
+.nav-links_button:hover {
+  text-decoration: underline;
+}
+
+.page__content {
+  text-align: center;
+}
+
+.page__footer {
+  width: 100%;
+  background: #2c2c2c;
+}
+
+.footer__container {
+  padding: 5%;
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+
+.footer__list-content {
+  list-style: none;
+}
+
+.footer-list-content_headline {
+  /* font-family: "TTHovesRegular"; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.92px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+}
+
+.footer-list-content__line {
+  /* font-family: "TTHovesRegular"; */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  margin-bottom: 1.5em;
+}
+
+.footer-list-content_link {
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.footer-list-content_icon {
+  margin-right: 10%;
+}
+
+.footer__logo {
+  width: 145px;
+  height: 94px;
+}
+
+.footer__information {
+}
+
+.footer__contacts {
+  width: 25%;
+}
+
+.footer__social-media {
+  width: 20%;
+}
