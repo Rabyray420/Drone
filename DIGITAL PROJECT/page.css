@@ -9,41 +9,40 @@
   font-weight: 400;
 }
 
-.page {
+body {
   margin: 0;
+
   font-family: "TTHovesRegular";
 }
 
-.page__header {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  align-content: center;
+.header {
   height: 100px;
+
+  display: grid;
+  grid-template-columns: 10% 10% 10% 70%;
+  align-items: center;
+
+  background-color: aqua;
+}
+
+.header__logo-link {
+  height: fit-content;
+  width: fit-content;
+
+  grid-column: 2/3;
 }
 
 .header__logo {
-  grid-column: 1 / 2;
-  height: auto;
-  width: auto;
-  display: flex;
-  justify-content: center;
+  height: 45px;
 }
 
-.logo_logo {
-  width: 70px;
-  height: 43.71px;
-  top: 29.14px;
-  left: 135px;
-  gap: 0px;
-  opacity: 0px;
+.header__nav {
+  grid-column: 4/5;
 }
 
-.header__nav-links {
-  grid-column: 2 / 3;
-}
-
-.nav-links_button {
+.header__nav-link {
   margin-right: 100px;
+
   /* font-family: "TTHovesRegular"; */
   font-size: 12px;
   font-weight: 400;
@@ -53,23 +52,59 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-decoration: none;
+
   color: #333333;
 }
-.nav-links_button:hover {
+
+.header__nav-link:hover {
   text-decoration: underline;
 }
+/* ____________________ДАЛЬШЕ main__________________________ */
 
-.page__content {
-  text-align: center;
+main {
+  display: grid;
+  grid-template-columns: 10% 30% 50% 10%;
+  grid-template-rows: 30% 30% 30%;
+
+  background-color: cornsilk;
 }
 
-.page__footer {
+.main__project-presentation {
+  grid-column: 2/4;
+  grid-row: 1/4;
+
+  text-align: center;
+
+  background-color: aquamarine;
+}
+
+.project-presentation__name {
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  background-color: blue;
+}
+.project-presentation__switcher {
+  grid-column: 3/4;
+
+  background-color: blueviolet;
+}
+.project-presentation__preview {
+  grid-column: 1/4;
+
+  background-color: chocolate;
+}
+
+/* ____________________ДАЛЬШЕ footer__________________________ */
+footer {
   width: 100%;
+
   background: #2c2c2c;
 }
 
 .footer__container {
   padding: 5%;
+
   display: flex;
   align-items: top;
   justify-content: space-around;
@@ -79,7 +114,7 @@
   list-style: none;
 }
 
-.footer-list-content_headline {
+.footer-list-content__headline {
   /* font-family: "TTHovesRegular"; */
   font-size: 16px;
   font-weight: 700;
@@ -87,10 +122,13 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   color: #ffffff;
 }
 
 .footer-list-content__line {
+  margin-bottom: 1.5em;
+
   /* font-family: "TTHovesRegular"; */
   font-size: 14px;
   font-weight: 500;
@@ -99,17 +137,17 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   color: #ffffff;
-  margin-bottom: 1.5em;
 }
 
-.footer-list-content_link {
-  color: #ffffff;
-
+.footer-list-content__link {
   text-decoration: none;
+
+  color: #ffffff;
 }
 
-.footer-list-content_icon {
+.footer-list-content__icon {
   margin-right: 10%;
 }
 
@@ -119,10 +157,11 @@
 }
 
 .footer__information {
+  width: 25%;
 }
 
 .footer__contacts {
-  width: 25%;
+  width: 20%;
 }
 
 .footer__social-media {
