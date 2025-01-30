@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Project</title>
-    <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
   </head>
+
   <body>
     <div class="header">
       <a class="header__logo-link" href="index.html">
@@ -20,11 +22,28 @@
         <a class="header__nav-link" href="index.html">КОНТАКТЫ</a>
       </nav>
     </div>
+
     <main>
       <div class="main__project-presentation">
-        <div class="project-presentation__name">название</div>
-        <div class="project-presentation__switcher">стрелочки</div>
-        <div class="project-presentation__preview">картинка</div>
+        <div class="project-presentation__name">
+          <p class="project-presentation__first-name">
+            PROJECT<br />
+            <span class="project-presentation__second-name">NURTOWN</span>
+          </p>
+        </div>
+
+        <div class="project-presentation__switcher">
+          <img src="img/arrow-left.svg" alt="" />
+          <img src="img/arrow-right.svg" alt="" />
+        </div>
+
+        <div class="project-presentation__preview">
+          <img
+            class="preview__img"
+            src="img/project-nurtown-image.svg"
+            alt=""
+          />
+        </div>
       </div>
     </main>
 
