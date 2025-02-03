@@ -1,0 +1,399 @@
+@font-face {
+  font-family: "TT Hoves";
+  src: url("fonts/TTHovesRegular/TTHovesRegular.woff");
+  src: url("fonts/TTHovesRegular/TTHovesRegular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/TTHovesRegular/TTHovesRegular.woff") format("woff"),
+    url("fonts/TTHovesRegular/TTHovesRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Black";
+  src: url("fonts/SF-Pro-Display/SF-Pro-Display-Black.otf") format("truetype");
+}
+
+body {
+  margin: 0;
+
+  font-family: TT Hoves;
+}
+
+.header {
+  height: 100px;
+
+  display: grid;
+  grid-template-columns: 15% 10% 15% 60%;
+  align-items: center;
+}
+
+.header__logo-link {
+  height: fit-content;
+  width: fit-content;
+
+  grid-column: 2/3;
+}
+
+.header__logo {
+  height: 45px;
+}
+
+.header__nav {
+  grid-column: 4/5;
+}
+
+.header__nav-link {
+  margin-right: 100px;
+
+  /* font-family: "TTHovesRegular"; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+
+  color: #333333;
+}
+
+.header__nav-link:hover {
+  text-decoration: underline;
+}
+/* ____________________ДАЛЬШЕ main__________________________ */
+
+main {
+}
+
+.project-presentation {
+  display: grid;
+  grid-template-columns: 15% 25% 1fr 15%;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: baseline;
+
+  /* text-align: center; */
+}
+
+.project-presentation__name {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.project-presentation__first-name {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #bdbdbd;
+}
+
+.project-presentation__second-name {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #333333;
+}
+.project-presentation__switcher {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.project-presentation__preview {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.preview__img {
+  width: 100%;
+}
+
+.about-company {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  /* height: 500px; */
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  background-color: #fbfbfb;
+}
+
+.about-company__group1 {
+  margin: 2%;
+
+  width: 270px;
+}
+
+.about-company__pic1 {
+  width: 270px;
+  height: 300px;
+  margin: 1%;
+}
+
+.about-company__pic2 {
+  width: 270px;
+  height: 140px;
+
+  margin: 1%;
+}
+
+.about-company__pic3 {
+  margin: 1%;
+
+  width: 270px;
+  height: 345px;
+}
+
+.about-company__group2 {
+  margin: 5%;
+}
+
+.about-company__description-container {
+}
+
+.about-company__title {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #bdbdbd;
+}
+
+.about-company__text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #000000;
+}
+
+.about-company__read-more-link {
+  display: block;
+  align-content: center;
+  width: 222px;
+  height: 71px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  text-decoration: none;
+
+  color: #333333;
+  background-color: #ffffff;
+}
+.main-tasks {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10%;
+}
+
+.main-tasks__headline {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #bdbdbd;
+}
+
+.main-tasks__container {
+  display: grid;
+  grid-template-columns: 10% 40% 10% 40%;
+  align-items: center;
+}
+
+.main-tasks__numbers {
+  font-family: SF-Pro-Display-Black;
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 200px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #f2f2f2;
+}
+
+.main-tasks__text {
+  margin-right: 10%;
+
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.our-projects {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 10%;
+}
+
+.our-projects__headline {
+  font-family: TT Hoves;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #bdbdbd;
+}
+
+.our-projects__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.our-projects-pictures__item {
+  margin: 1%;
+}
+
+.our-projects__all-projects-container {
+  display: flex;
+  justify-content: end;
+}
+
+.our-projects__all-projects-link {
+  display: block;
+  align-content: center;
+  width: 222px;
+  height: 71px;
+
+  font-family: TT Hoves;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  text-decoration: none;
+
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.feedback-form-section {
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  display: flex;
+}
+
+.feedback-form-section__title {
+  font-family: TT Hoves;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #bdbdbd;
+}
+
+.feedback-form-section__form {
+}
+
+.feedback-form-section__image {
+  margin-right: ;
+}
+
+/* ____________________ДАЛЬШЕ footer__________________________ */
+footer {
+  width: 100%;
+
+  background: #2c2c2c;
+}
+
+.footer__container {
+  padding-top: 3%;
+
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+
+.footer__list-content {
+  list-style: none;
+}
+
+.footer-list-content__headline {
+  /* font-family: "TTHovesRegular"; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.92px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #ffffff;
+}
+
+.footer-list-content__line {
+  margin-bottom: 1.5em;
+
+  /* font-family: "TTHovesRegular"; */
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #ffffff;
+}
+
+.footer-list-content__link {
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.footer-list-content__icon {
+  margin-right: 10%;
+}
+
+.footer__logo {
+  width: 145px;
+  height: 94px;
+}
+
+.footer__information {
+  width: 25%;
+}
+
+.footer__contacts {
+  width: 20%;
+}
+
+.footer__social-media {
+  width: 20%;
+}
