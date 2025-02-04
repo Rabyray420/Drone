@@ -127,34 +127,12 @@ main {
   background-color: #fbfbfb;
 }
 
-.about-company__group1 {
-  margin: 2%;
-
-  width: 270px;
-}
-
-.about-company__pic1 {
-  width: 270px;
-  height: 300px;
-  margin: 1%;
-}
-
-.about-company__pic2 {
-  width: 270px;
-  height: 140px;
-
-  margin: 1%;
-}
-
-.about-company__pic3 {
-  margin: 1%;
-
-  width: 270px;
-  height: 345px;
-}
-
-.about-company__group2 {
+.about-company__group {
   margin: 5%;
+}
+
+.about-company__pic {
+  margin: 1%;
 }
 
 .about-company__description-container {
@@ -304,9 +282,14 @@ main {
   margin-right: 15%;
 
   display: flex;
+  justify-content: space-between;
 }
 
-.feedback-form-section__title {
+.feedback-form-section-title {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+
   font-family: TT Hoves;
   font-size: 64px;
   font-weight: 300;
@@ -319,10 +302,79 @@ main {
 }
 
 .feedback-form-section__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__input {
+  height: 10%;
+  margin-bottom: 2%;
+
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.43px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.feedback-form__textarea {
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.43px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.feedback-form__button {
+  width: 221.81px;
+  height: 71px;
+  top: 3444px;
+  left: 135px;
+  gap: 0px;
+  opacity: 0px;
+
+  font-family: TT Hoves;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #ffffff;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.feedback-form__confidential-politic-alert {
+  margin: 5%;
+
+  font-family: TT Hoves;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.43px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #333333;
 }
 
 .feedback-form-section__image {
-  margin-right: ;
 }
 
 /* ____________________ДАЛЬШЕ footer__________________________ */

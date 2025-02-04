@@ -47,25 +47,25 @@
       </div>
 
       <div class="about-company">
-        <div class="about-company__group1">
+        <div class="about-company__group">
           <img
-            class="about-company__pic1"
+            class="about-company__pic"
             src="img/about-company-pic1.svg"
             alt=""
           />
           <img
-            class="about-company__pic2"
+            class="about-company__pic"
             src="img/about-company-pic2.svg"
             alt=""
           />
         </div>
 
         <img
-          class="about-company__pic3"
+          class="about-company__pic"
           src="img/about-company-pic3.svg"
           alt=""
         />
-        <div class="about-company__group2">
+        <div class="about-company__group">
           <div class="about-company__description-container">
             <p class="about-company__title">О компании</p>
             <p class="about-company__text">
@@ -100,7 +100,7 @@
       </div>
 
       <div class="our-projects">
-        <h1 class="our-projects__headline">Наши проекты</h1>
+        <div class="our-projects__headline">Наши проекты</div>
         <div class="our-projects__pictures">
           <img
             class="our-projects-pictures__item"
@@ -135,22 +135,49 @@
         </div>
       </div>
 
+      <div class="feedback-form-section-title">Связаться с нами</div>
       <div class="feedback-form-section">
-        <h1 class="feedback-form-section__title">Связаться с нами</h1>
-        <div class="feedback-form-section__form">
-          <form id="feedbackForm">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required />
+        <form class="feedback-form-section__form" id="feedback-form">
+          <input
+            class="feedback-form__input"
+            type="text"
+            placeholder="Имя"
+            name="name"
+            required
+          />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+          <input
+            class="feedback-form__input"
+            type="tel"
+            placeholder="Номер телефона по форме 000-000-0000"
+            name="phone-number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
 
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" required></textarea>
+          <input
+            class="feedback-form__input"
+            type="email"
+            placeholder="E-mail"
+            name="email"
+            required
+          />
 
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
+          <textarea
+            class="feedback-form__textarea"
+            placeholder="Сообщение"
+            name="message"
+            required
+          ></textarea>
+
+          <p class="feedback-form__confidential-politic-alert">
+            Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+          </p>
+
+          <button class="feedback-form__button" type="submit">
+            ОТПРАВИТЬ &rarr;
+          </button>
+        </form>
 
         <img
           class="feedback-form-section__image"
@@ -158,6 +185,7 @@
           alt=""
         />
       </div>
+      <script src="scripts/script.js"></script>
     </main>
 
     <footer class="footer__container">
@@ -207,7 +235,6 @@
 
       <ul class="footer__social-media footer__list-content">
         <h class="footer-list-content__headline">Социальные сети</h>
-        <p></p>
         <li class="footer-list-content__line">
           <a class="footer-list-content__link" href="">
             <img
