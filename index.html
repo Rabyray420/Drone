@@ -6,6 +6,7 @@
     <title>Digital Project</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="normalize.css" />
+    <script defer src="scripts/script.js"></script>
   </head>
 
   <body>
@@ -137,44 +138,56 @@
 
       <div class="feedback-form-section-title">Связаться с нами</div>
       <div class="feedback-form-section">
-        <form class="feedback-form-section__form" id="feedback-form">
+        <form
+          class="feedback-form-section__form"
+          id="feedback-form"
+          method="get"
+        >
           <input
             class="feedback-form__input"
+            id="name"
             type="text"
             placeholder="Имя"
             name="name"
-            required
+            data-reg="^[а-яА-ЯёЁa-zA-Z0-9\s]+$"
           />
 
           <input
             class="feedback-form__input"
-            type="tel"
-            placeholder="Номер телефона по форме 000-000-0000"
+            id="phone-number"
+            type="text"
+            placeholder="Номер телефона"
             name="phone-number"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            required
+            data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$"
           />
 
           <input
             class="feedback-form__input"
+            id="email"
             type="email"
             placeholder="E-mail"
             name="email"
-            required
+            data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
           />
 
           <textarea
             class="feedback-form__textarea"
+            id="message"
             placeholder="Сообщение"
             name="message"
-            required
+            data-reg="^[а-яА-ЯёЁa-zA-Z0-9\s]+$"
           ></textarea>
 
           <p class="feedback-form__confidential-politic-alert">
             Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
           </p>
 
-          <button class="feedback-form__button" type="submit">
+          <button
+            class="feedback-form__button"
+            id="feedback-form-button"
+            type="submit"
+            name="feedback-form-button"
+          >
             ОТПРАВИТЬ &rarr;
           </button>
         </form>
@@ -185,7 +198,6 @@
           alt=""
         />
       </div>
-      <script src="scripts/script.js"></script>
     </main>
 
     <footer class="footer__container">
